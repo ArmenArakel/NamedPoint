@@ -1,0 +1,32 @@
+This is the README file of NamedPoint project.
+
+CONTENTS
+        1. AUTHOR
+        2. DIRECTORY STRUCTURE
+        3. PREREQUISITES
+        5. COMPILATION
+        5. USAGE
+        6. DOCUMENTATION
+
+1. AUTHOR
+
+E-mail: arakmen@yahoo.com
+Tel: +374 55717957
+
+2. DIRECTORY STRUCTURE
+
+src/            - the source files of the project
+makefile        - top level makefile to build / run the project
+
+3. PREREQUISITES
+
+The following tools should be installed before the compilation.
+g++
+make
+
+4. COMPILATION
+$ make 
+
+5. USAGE
+./named_point_test
+
