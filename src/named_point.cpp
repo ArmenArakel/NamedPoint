@@ -3,7 +3,7 @@
 
 #include "named_point.hpp"
 
-NamedPoint::NamedPoint(float x, float y, const char* name)
+NamedPoint::NamedPoint(const float& x, const float& y, const char* name)
 {
     this->x = x;
     this->y = y;
@@ -26,7 +26,7 @@ NamedPoint::~NamedPoint()
     }
 }
 
-void NamedPoint::setX(float x)
+void NamedPoint::setX(const float& x)
 {
     this->x = x;
 }
@@ -36,7 +36,7 @@ float NamedPoint::getX() const
     return this->x;
 }
 
-void NamedPoint::setY(float y)
+void NamedPoint::setY(const float& y)
 {
     this->y = y;
 }
@@ -74,6 +74,8 @@ NamedPoint& NamedPoint::operator=(const NamedPoint& namedPoint)
     this->x = namedPoint.x;
     this->y = namedPoint.y;
     setName(namedPoint.name);
+
+    return *this;
 }
 
 bool NamedPoint::operator==(const NamedPoint& namedPoint) const
@@ -86,8 +88,7 @@ bool NamedPoint::operator==(const NamedPoint& namedPoint) const
     return false;
 }
 
-
-void NamedPoint::moveTo(float x, float y)
+void NamedPoint::moveTo(const float& x, const float& y)
 {
     this->x = x;
     this->y = y;

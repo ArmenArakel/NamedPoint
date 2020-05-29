@@ -21,7 +21,7 @@ public:
      * @param y - y coordinate
      * @param name - name of point
      */
-    NamedPoint(float x, float y, const char* name);
+    NamedPoint(const float& x, const float& y, const char* name);
     /**
      * Copy Constructor
      */
@@ -34,7 +34,7 @@ public:
     /**
      * Setting the specified X coordinate
      */
-    void setX(float x);
+    void setX(const float& x);
     /**
      * Getting the X coordinate
      */
@@ -42,7 +42,7 @@ public:
     /**
      * Setting the specified Y coordinate
      */
-    void setY(float y);
+    void setY(const float& y);
     /**
      * Getting the Y coordinate
      */
@@ -70,7 +70,7 @@ public:
      * @param x
      * @param y
      */
-    void moveTo(float x, float y);
+    void moveTo(const float& x, const float& y);
     /**
      * Calculates direct distance between two NamedPoints
      * @param namedPoint
